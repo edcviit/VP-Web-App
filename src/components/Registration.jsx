@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import LoadingButton from "./LoadingButton";
+import { RocketAnimation } from "./RocketAnimation";
 
 const RegistrationForm = () => {
   const navigate = useNavigate();
@@ -112,8 +113,8 @@ const RegistrationForm = () => {
         setRocketUdd(true);
         setTimeout(() => {
           console.log("Registration successful");
-          navigate("/RegistrationSuccess");
-        }, 2000);
+            navigate("/");
+        }, 1000);
       } else {
         console.error("Registration failed");
       }
@@ -232,7 +233,7 @@ const RegistrationForm = () => {
             {isloading ? (
               <>
                 <LoadingButton />
-                {/* <RocketAnimation /> */}
+                <RocketAnimation rocketUdd={rocketUdd} />
               </>
             ) : (
               <button
