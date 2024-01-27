@@ -33,5 +33,32 @@ body {
 }
 
 .boxy-bg input::placeholder {
-  opacity:0.2;
+  opacity: 0.2;
+}
+
+.ani-fly {
+  animation: fly 10s ease-out;
+}
+
+.ani-come {
+  animation: come 3s ease-out;
+}
+@keyframes come {
+  from {
+    transform: translateY(300%);
+     background-color: rgba(255, 255, 255, 0);
+  }
+  to {
+    transform: translateY(0);
+     background-color: rgba(255, 255, 255, 1);
+  }
+}
+@keyframes fly {
+  from {
+    transform: translateY(0);
+    
+  }
+  to {
+    transform: translateY(-3000%);
+  }
 }

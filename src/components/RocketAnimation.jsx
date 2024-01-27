@@ -15,7 +15,7 @@ const Basic = ({ rocketUdd }) => {
   return (
     <div>
       <div id="target" className="absolute ">
-        <div class={`rocket animate-${flyOrCome} `}>
+        <div class={`rocket ani-${flyOrCome} `}>
           <div class="rocket-body ">
             <div class="body"></div>
             <div class="fin fin-left"></div>

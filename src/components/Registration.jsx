@@ -237,12 +237,13 @@ const RegistrationForm = () => {
               </>
             ) : (
               <button
-                type="submit"
-                className="bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600"
+              type="submit"
+              className="bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600"
               >
                 Register
               </button>
             )}
+            {/* <RocketAnimation rocketUdd={rocketUdd} /> */}
           </div>
         </form>
       </div>
